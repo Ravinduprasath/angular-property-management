@@ -1,0 +1,27 @@
+mat-sidenav-container{
+    height: 92%;
+}
+
+mat-toolbar{
+    height: 8%;
+}
+
+mat-sidenav, mat-sidenav-content{
+    padding: 16px;
+}
+
+mat-sidenav{
+    width: 220px;
+}
+
+.dashboard-buttons{
+    width: 160px;
+}
+
+.route-body{
+    //margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+    //min-height: 90%;
+    border: 1px solid lightgray;
+}

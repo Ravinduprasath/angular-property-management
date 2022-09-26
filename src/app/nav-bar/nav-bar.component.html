@@ -1,0 +1,34 @@
+
+<!-- Topnavbar -->
+<mat-toolbar color="primary">
+  <button (click)="sidenav.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Dream House</span>
+</mat-toolbar>
+
+<!-- Side navbar -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened mat-raised>
+    <mat-list>
+      <mat-list-item>
+        <a class="dashboard-buttons" mat-stroked-button color="primary" routerLink="#">Dashboard</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a class="dashboard-buttons" mat-stroked-button color="primary" href="/property">Properties</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a class="dashboard-buttons" mat-stroked-button color="primary" href="#">About</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Area for routes -->
+    <div class="route-body">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+  

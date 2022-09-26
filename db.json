@@ -1,0 +1,51 @@
+{
+  "propertyType": [
+    {
+      "id": 1,
+      "title": "House"
+    },
+    {
+      "id": 2,
+      "title": "Apartment"
+    },
+    {
+      "id": 3,
+      "title": "Commercial"
+    }
+  ],
+  "property": [
+    {
+      "ownerName": "123",
+      "propertyAddress": "123",
+      "propertyType": "Apartment",
+      "bedroomCount": 12,
+      "phoneNumber": 123,
+      "latitude": 7.2906,
+      "longitude": 80.6337,
+      "id": 1
+    },
+    {
+      "ownerName": "Ravindu",
+      "propertyAddress": "Prasath",
+      "propertyType": "Apartment",
+      "bedroomCount": 2,
+      "phoneNumber": 769606930,
+      "latitude": 7.2906,
+      "longitude": 80.6337,
+      "id": 2
+    },
+    {
+      "ownerName": "Ravindu",
+      "propertyAddress": "Prasath",
+      "propertyType": "House",
+      "bedroomCount": 3,
+      "phoneNumber": 769606930,
+      "latitude": 7.2906,
+      "longitude": 80.6337,
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

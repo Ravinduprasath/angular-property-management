@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>Add Student</h1>
+
+<div class="container">
+<form [formGroup]="propertyForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Owner's Name</mat-label>
+        <input formControlName="ownerName" matInput placeholder="Owner's name" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <input formControlName="propertyAddress" matInput placeholder="Property address" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Property Type</mat-label>
+        <mat-select formControlName="propertyType" placeholder="Property type" required>
+            <div *ngFor="let prop of propertyTypeList">
+                <mat-option value={{prop.title}}>{{prop.title}}</mat-option>
+            </div>   
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Bedrooms</mat-label>
+        <input formControlName="bedroomCount" type="number" matInput placeholder="Number of bedrooms" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Phone Number</mat-label>
+        <input formControlName="phoneNumber" type="number" matInput placeholder="Phone number" required>
+    </mat-form-field>
+
+
+    <mat-divider></mat-divider>
+    <mat-form-field appearance="outline">
+        <mat-label>Latitude</mat-label>
+        <input formControlName="latitude" type="number" matInput placeholder="Cordinnates" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Longitude</mat-label>
+        <input formControlName="longitude" type="number" matInput placeholder="Cordinates" required>
+    </mat-form-field>
+</form>
+</div>
+
+
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" (click)="addProperty()">Add</button>
+</div>

@@ -1,0 +1,32 @@
+body {
+    padding: 20px;
+}
+
+.float-left {
+    float:left;
+    width:350px;
+    margin-left: 50px;
+}
+
+.example-card {
+    // max-width: 250px;
+    margin: 20px;
+    height: 450px;
+}
+
+.btn-actions{
+    background-color: #b2dfdb;
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+mat-list-item{
+    font-size: 18px !important;
+}
+
+mat-divider{
+    margin: 10px 0px 10px 0px;
+}
+

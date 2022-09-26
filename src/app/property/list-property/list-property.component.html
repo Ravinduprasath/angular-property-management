@@ -1,0 +1,29 @@
+<body>
+    <div  [align]="'end'">
+        <button mat-raised-button color="accent" (click)="openDialog()">Add Property</button>
+    </div>
+</body>
+
+<div *ngFor="let property of propertyList">
+    <div class="float-left">
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{ property.propertyType }}</mat-card-title>
+              <mat-card-subtitle>{{ property.propertyAddress }}</mat-card-subtitle>
+            </mat-card-header>
+            <img *ngIf="property.propertyType == 'House'" mat-card-image src="../../../assets/Images/property-house.jpg" width="300px" height="200px" alt="Photo of a Shiba Inu">
+            <img *ngIf="property.propertyType == 'Apartment'" mat-card-image src="../../../assets/Images/property-apartment.jpg" width="300px" height="200px" alt="Photo of a Shiba Inu">
+            <img *ngIf="property.propertyType == 'Commercials'" mat-card-image src="../../../assets/Images/property-commercial.jpg" width="300px" height="200px" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <mat-list-item><span>Address : </span> <span>{{property.propertyAddress}}</span></mat-list-item> <br/>
+                <mat-list-item><span>Bedrooms : </span> <span>{{property.bedroomCount}}</span></mat-list-item> <br/>
+                <mat-divider></mat-divider>
+                <mat-list-item><span>Landlord : </span> <span>{{property.ownerName}}</span></mat-list-item> <br/>
+                <mat-list-item><span>Contact : </span> <span>{{property.phoneNumber}}</span></mat-list-item> <br/>
+            </mat-card-content>
+            <mat-card-actions>
+              <a mat-flat-button class="btn-actions" href="/property/detail/{{property.id}}">View</a>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+</div>
